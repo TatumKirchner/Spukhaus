@@ -2,7 +2,7 @@
 This is a short horror game made for a game jam (5/24/21 - 5/31/21).
 You must navigate the fun house in the dark, with only your flashlight to save your daughter. Solve puzzles and escape if you can.
 
-[Download on itch.io](https://tatumkirchner.itch.io/spukhaus).
+#### Download a build on [itch.io](https://tatumkirchner.itch.io/spukhaus).
 
 Controls:
 
