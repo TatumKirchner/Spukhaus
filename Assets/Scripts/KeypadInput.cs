@@ -11,6 +11,7 @@ public class KeypadInput : MonoBehaviour
     [SerializeField] private GameObject doorToOpen;
     [SerializeField] private AudioSource source;
     [SerializeField] private AudioClip[] toneClips;
+    [SerializeField] private GameObject interactText;
     private InputField textInput;
 
     private readonly string code = "1408";
@@ -53,6 +54,7 @@ public class KeypadInput : MonoBehaviour
         if (isActive)
         {
             textBox.SetActive(true);
+            interactText.SetActive(false);
             EventSystem.current.SetSelectedGameObject(textBox);
         }
         else
@@ -68,11 +70,9 @@ public class KeypadInput : MonoBehaviour
         {
             isActive = false;
             openDoor = true;
-            Debug.Log("The code is right : " + input);
         }
         else
         {
-            Debug.Log("The code is wrong : " + input);
             textInput.text = null;
             EventSystem.current.SetSelectedGameObject(null);
             EventSystem.current.SetSelectedGameObject(textBox);
@@ -86,7 +86,7 @@ public class KeypadInput : MonoBehaviour
     {
         if (openDoor)
         {
-            doorToOpen.transform.Rotate(Vector3.up * doorOpenSpeed * Time.deltaTime);
+            doorToOpen.transform.Rotate(doorOpenSpeed * Time.deltaTime * Vector3.up);
             if (doorToOpen.transform.localEulerAngles.y >= 90)
             {
                 openDoor = false;

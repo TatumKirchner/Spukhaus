@@ -44,7 +44,7 @@ public class FieldOfView : MonoBehaviour
 
     private void OnEnable()
     {
-        StartCoroutine("FindTargets", 0.2f);
+        StartCoroutine(FindTargets(0.2f));
     }
 
     private void LateUpdate()

@@ -18,6 +18,7 @@ public class Carousel : MonoBehaviour
 
     [SerializeField] private Animator wallAnim;
     [SerializeField] private Animator lightAnim;
+    [SerializeField] private GameObject interactText;
     private AudioSource source;
 
     private bool startSpin = false;
@@ -101,6 +102,7 @@ public class Carousel : MonoBehaviour
                     //Switch its layer to the object highlight layer
                     currentTarget = target;
                     currentTarget.layer = highlightLayer;
+                    interactText.SetActive(true);
                     canInteractWithDoor = true;
                     //If the player highlights the correct door set the bool
                     if (currentTarget.CompareTag("Exit Door"))
@@ -117,6 +119,7 @@ public class Carousel : MonoBehaviour
             {
                 //Set the objects layer back to normal so its not highlighted anymore
                 currentTarget.layer = doorLayer;
+                interactText.SetActive(false);
                 currentTarget = null;
                 canInteractWithDoor = false;
                 correctDoor = false;

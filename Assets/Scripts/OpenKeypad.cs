@@ -7,6 +7,7 @@ public class OpenKeypad : MonoBehaviour
     private KeypadInput keypadInput;
     private int highlightLayer;
     private int defaultLayer;
+    [SerializeField] private GameObject interactText;
 
     private void Start()
     {
@@ -21,6 +22,7 @@ public class OpenKeypad : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             gameObject.layer = highlightLayer;
+            interactText.SetActive(true);
             keypadInput.canInteract = true;
         }   
     }
@@ -31,6 +33,7 @@ public class OpenKeypad : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             gameObject.layer = defaultLayer;
+            interactText.SetActive(false);
             keypadInput.canInteract = false;
             keypadInput.isActive = false;
         }
