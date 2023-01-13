@@ -5,24 +5,27 @@
 
 #### Download a build on [itch.io](https://tatumkirchner.itch.io/spukhaus).
 
-Controls:
+---
 
-        -Walk - WSAD
+Controls
+-
+Walk - <kbd>W</kbd><kbd>S</kbd><kbd>A</kbd><kbd>D</kbd>
   
-        -Toggle Flashlight - F
+Toggle Flashlight - <kbd>F</kbd>
   
-        -Slight Jog - Left Shift
+Slight Jog - <kbd>Left Shift</kbd>
   
-        -Interact with Highlighted Object - E
+Interact with Highlighted Object - <kbd>E</kbd>
   
-        -Pause Menu/Settings - ESC        
-  
-Credits:
+Pause Menu/Settings - <kbd>ESC</kbd>
 
-        -Kelly Knowd - Lead Character Artist/Level Design
+Credits
+-
+
+Kelly Knowd - Lead Character Artist/Level Design
   
-        -Robert Becerra - Lead Audio Design/Level Design
+Robert Becerra - Lead Audio Design/Level Design
   
-        -Tatum Kirchner - Lead Programmer/Level Design
+Tatum Kirchner - Lead Programmer/Level Design
   
-        -Tyler Keith - Lead Environment Artist/Level Design
+Tyler Keith - Lead Environment Artist/Level Design
